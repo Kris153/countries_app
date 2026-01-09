@@ -1,0 +1,14 @@
+<h1>All countries</h1>
+
+<%= link_to "Add new country", root_path %>
+
+<ul>
+  <% @countries.each do |c| %>
+    <li>
+      <strong><%= c.name %></strong> -
+      Capital: <%= c.capital %>,
+      Region: <%= c.region %>,
+      Population: <%= c.population %>
+    </li>
+  <% end %>
+</ul>
